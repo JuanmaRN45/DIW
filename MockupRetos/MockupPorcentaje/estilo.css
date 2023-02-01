@@ -13,7 +13,7 @@ body{
 header{
     height:16.66667%;   /* 150/900x100 es 16,666666% */
     width: 93.75%;      /* 1500px es el 93,75% de 1600px */
-    padding-left: 100px;
+    padding-left: 6.25%;    /* 100px es el 6,25% de 1600px  */
     background-color: aqua;
 }
 
