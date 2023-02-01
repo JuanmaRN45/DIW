@@ -1,0 +1,143 @@
+* {
+    float:left;
+}
+body{
+    width: 1600px;
+    height:900px;
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height:16.66667%;   /* 150/900x100 es 16,666666% */
+    width: 93.75%;      /* 1500px es el 93,75% de 1600px */
+    padding-left: 100px;
+    background-color: aqua;
+}
+
+header img{
+    width: 13.3333333%; /* 200/1500 (que es el ancho del header) x100 es 13,333333% */
+    height: 100%;
+}
+
+header div.opciones{
+    width: 433.333333px;
+    height: 100px;
+    padding-top: 50px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+div#contenedorPrincipal{
+    width:1000px;
+    height:500px;
+    padding: 50px;
+    background-color: blue;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+a:link{
+    color: black; 
+}
+
+div#contenedorPrincipal form{
+    padding: 25px 50px;
+    width: 900px;
+    height: 450px;
+    background-color: blueviolet;
+}
+
+div#navDerecho{
+    width:500px;
+    height:600px;
+    background-color: brown;
+    display: inline-block;
+}
+
+div#navDerecho div.menus{
+    height: 100px;
+    width: 500px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+div#navDerecho :nth-child(2n){
+    background-color: antiquewhite;
+}
+
+div#contenedorPrincipal form fieldset{
+    height: 75px;
+    width: 266.6666px;
+    margin: 0px 0px 50px 0px;
+    padding: 0;
+    border: 0;
+}
+div#contenedorPrincipal form fieldset.medio{
+    height: 75px;
+    width: 266.6666px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    border: 0;
+}
+
+div#contenedorPrincipal form fieldset#descripcion{
+    height: 100px;
+    width: 583.3332px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    padding: 0;
+    border: 0;
+}
+
+div#contenedorPrincipal form fieldset#descripcion textarea{
+    border: 1px solid black;
+    resize: none;
+    width: 583.3332px;
+    padding: 1px 0px 1px 5px;
+    height: 55px;
+}
+
+div#contenedorPrincipal form fieldset#boton{
+    height: 75px;
+    width: 300px;
+    margin-left: 300px;
+    margin-bottom: 0px;
+    padding: 0;
+    border: 0;
+}
+
+div#contenedorPrincipal form fieldset#boton input{
+    box-sizing: content-box;
+    height: 73px;
+    width: 298px;
+    padding: 0;
+    text-align: center;
+}
+
+div#contenedorPrincipal form input{
+    box-sizing: content-box;
+    border: 1px solid black;
+    width: 244.6666px;
+    height: 26px;
+    padding: 1px 0px 1px 20px;
+}
+
+footer{
+    height:100px;
+    width: 1600px;
+    background-color: chartreuse;
+    text-align: center;
+    padding-top: 50px;
+}
