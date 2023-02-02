@@ -1,8 +1,14 @@
 * {
     float:left;
 }
-body{
+
+html{
     width: 1600px;
+    height:900px;
+}
+
+body{
+    width: 100%;
     height:900px;
     margin: 0;
     font-size: 35px;

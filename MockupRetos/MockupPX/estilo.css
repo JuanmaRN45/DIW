@@ -1,6 +1,10 @@
 * {
     float:left;
 }
+html{
+    width: 1600px;
+    height:900px;
+}
 body{
     width: 1600px;
     height:900px;
