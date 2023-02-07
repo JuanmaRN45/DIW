@@ -1,0 +1,325 @@
+* {
+    float:left;
+}
+
+body{
+    width: 100%;
+    height:900px;
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#check,#btnMenu{
+    display: none;
+}
+header{
+    height:150px;   /* 150/900x100 es 16,666666% */
+    width: 93.75%;      /* 1500px es el 93,75% de 1600px */
+    padding-left: 6.25%;    /* 100px es el 6,25% de 1600px  */
+    background-color: aqua;
+}
+
+header img{
+    width: 13.3333333%; /* 200/1500 (que es el ancho del header) x100 es 13,333333% */
+    max-height: 150px;
+}
+
+header div.opciones{
+    width: 100%; /* 100% para que el div coja todo el ancho del a*/
+    height: 100px;
+    padding-top: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+div#contenedorPrincipal{
+    width:62.5%;    /* 1000px es el 62.5% de 1600px*/
+    height:500px;
+    padding: 50px 3.125%;   /* 50px es el 3,125% de 1600px*/
+    background-color: blue;
+    display: inline-block;
+}
+
+header a{
+    width: 28.8888889%; /* 433,3333333px es el 28.8888889% de 1500px*/
+    height: 150px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+
+a:link{
+    color: black; 
+}
+
+div#contenedorPrincipal form{
+    padding: 25px 5%; /* 50px es el 5% de 1000px */
+    width: 90%;    /* 900px es el 90% de 1000px */
+    height: 450px;
+    background-color: blueviolet;
+}
+
+div#navDerecho{
+    width:31.25%; /* 500px es el 31,25% de 1600*/
+    height:600px;
+    background-color: brown;
+    display: inline-block;
+}
+
+div#navDerecho div.menus{
+    height: 100px;
+    width: 100%; /*500px es el 100% de 500px*/
+    text-align: center;
+}
+
+div#navDerecho a{
+    height: 100px;
+    width: 100%; /*500px es el 100% de 500px*/
+    padding-top: 50px;
+}
+
+div#navDerecho :nth-child(2n){
+    background-color: antiquewhite;
+}
+
+div#contenedorPrincipal form div.formulario{
+    width: 100%;
+    height: 75px;
+    margin: 0px 0px 50px 0px;
+    font-size: 0.45em;
+}
+
+div#contenedorPrincipal form fieldset{
+    height: 75px;
+    width: 29.6296222%; /* 266,6666px es el 29,6296222% de 900px */
+    margin: 0px 0px 50px 0px;
+    padding: 0;
+    border: 0;
+}
+div#contenedorPrincipal form fieldset.medio{
+    height: 75px;
+    width: 29.6296222%; /* 266,6666px es el 29,6296222% de 900px */
+    margin-left: 5.55555556%;   /* 50px es el 5.55555556% de 900px */
+    margin-right: 5.55555556%;  /* 50px es el 5.55555556% de 900px */
+    padding: 0;
+    border: 0;
+}
+
+div#contenedorPrincipal form fieldset#descripcion{
+    height: 100px;
+    width: 64.8148%;  /* 583.3332px es el 64.8148% de 900px*/
+    margin-left: 5.55555556%;  /* 50px es el 5.55555556% de 900px */
+    margin-bottom: 25px;
+    padding: 0;
+    border: 0;
+}
+
+div#contenedorPrincipal form fieldset#descripcion textarea{
+    border: 1px solid black;
+    resize: none;
+    width: 100%;    /* 583.3332px es el 100% de 583.3332px*/
+    padding: 1px 0px 1px 0.858%; /*5px es el 0,858% de 583.3332px*/
+    height: 55px;
+}
+
+div#contenedorPrincipal form fieldset#boton{
+    height: 75px;
+    width: 33.3333333%; /* 300px es el 33,3333333% de 900px */
+    margin-left: 33.33333333%;  /* 300px es el 33,3333333% de 900px */
+    margin-bottom: 0px;
+    padding: 0;
+    border: 0;
+}
+
+div#contenedorPrincipal form fieldset#boton input{
+    box-sizing: content-box;
+    height: 73px;
+    width: 99.333333333%;
+    padding: 0;
+    text-align: center;
+}
+
+div#contenedorPrincipal form input{
+    box-sizing: content-box;
+    border: 1px solid black;
+    width: 91.7499979%;    /*244.6666px es el 91.7499979% de 266,6666px*/
+    height: 26px;
+    padding: 1px 0px 1px 7.501%; /* 20px es el 7.501% de 244.6666px*/
+}
+
+footer{
+    height:100px;
+    width: 100%;
+    background-color: chartreuse;
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media(max-width: 720px){
+    * {
+        float:left;
+    }
+    
+    body{
+        width: 100%;
+        min-height:900px;
+        margin: 0;
+        font-size: 2.2rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header{
+        min-height:200px;   
+        width: 93.75%;     
+        padding-left: 6.25%;   
+        background-color: aqua;
+        overflow: hidden;
+    }
+    
+    header img{
+        display: inline-block;
+        width: 13.3333333%;
+        max-height: 150px;
+        margin-top: 40px;
+    }
+    
+    header div.opciones{
+        position: relative;
+        display: none;
+        padding-top: 0;
+        font-size: 1.3rem;
+        height: auto;
+    }
+
+    header a{
+        display: none;
+        height: auto;
+    }
+
+    label#btnMenu{
+        display: inline-block;
+        width: 10%;
+        height: 50px;
+        position: relative;
+        margin-left: 70%;
+    }
+    label#btnMenu img{
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+    }
+
+    input#check:checked~a, div.opciones{
+        top:80px;
+        left:-50px;
+        display: block !important;
+    }
+    div#contenedorPrincipal{
+        width: 93.75%;   
+        min-height:500px;
+        padding: 50px 3.125%;  
+        background-color: blue;
+        display: inline-block;
+    }
+    
+    
+    a{
+        text-decoration: none;
+    }
+    a:visited{
+        color: black;
+    }
+    
+    a:link{
+        color: black; 
+    }
+    
+    div#contenedorPrincipal form{
+        padding: 25px 5%; 
+        width: 90%;  
+        min-height: 450px;
+        background-color: blueviolet;
+    }
+    
+    div#navDerecho{
+        display: none;
+    }
+    
+    div#contenedorPrincipal form div.formulario{
+        width: 100%;
+        min-height: 75px;
+        margin: 0px 0px 50px 0px;
+        font-size: 0.45em;
+    }
+    
+    div#contenedorPrincipal form fieldset{
+        min-height: 75px;
+        width: 29.6296222%;
+        margin: 0px 0px 50px 0px;
+        padding: 0;
+        border: 0;
+    }
+    div#contenedorPrincipal form fieldset.medio{
+        min-height: 75px;
+        width: 29.6296222%; 
+        margin-left: 5.55555556%;   
+        margin-right: 5.55555556%; 
+        padding: 0;
+        border: 0;
+    }
+    
+    div#contenedorPrincipal form fieldset#descripcion{
+        min-height: 100px;
+        width: 64.8148%;  
+        margin-left: 5.55555556%; 
+        margin-bottom: 25px;
+        padding: 0;
+        border: 0;
+    }
+    
+    div#contenedorPrincipal form fieldset#descripcion textarea{
+        border: 1px solid black;
+        resize: none;
+        width: 100%;    
+        padding: 1px 0px 1px 0.858%; 
+        min-height: 55px;
+    }
+    
+    div#contenedorPrincipal form fieldset#boton{
+        min-height: 75px;
+        width: 33.3333333%; 
+        margin-left: 33.33333333%; 
+        margin-bottom: 0px;
+        padding: 0;
+        border: 0;
+    }
+    
+    div#contenedorPrincipal form fieldset#boton input{
+        box-sizing: content-box;
+        min-height: 73px;
+        width: 99.333333333%;
+        padding: 0;
+        text-align: center;
+    }
+    
+    div#contenedorPrincipal form input{
+        box-sizing: content-box;
+        border: 1px solid black;
+        width: 91.7499979%;  
+        min-height: 26px;
+        padding: 1px 0px 1px 7.501%;
+    }
+    
+    footer{
+        min-height:100px;
+        width: 100%;
+        background-color: chartreuse;
+        text-align: center;
+        padding-top: 50px;
+    }
+}
